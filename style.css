@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #91a3ad;
+
+    font-family: Arial, sans-serif;
+}
+
+.todo-container {
+    width: 590px;
+    min-height: 890px;
+
+    padding: 65px 40px;
+
+    background-color: #e7e7e4;
+
+    border-radius: 45px;
+}
+
+h1 {
+    text-align: center;
+
+    margin-bottom: 45px;
+
+    font-size: 34px;
+
+    letter-spacing: 13px;
+}
+
+.input-box {
+    display: flex;
+
+    gap: 15px;
+
+    margin-bottom: 20px;
+}
+
+.input-box input {
+    flex: 1;
+
+    height: 45px;
+
+    padding: 0 10px;
+
+    border: none;
+    border-bottom: 1px solid #555;
+
+    outline: none;
+
+    background: transparent;
+
+    font-size: 16px;
+}
+
+.input-box button {
+    width: 45px;
+    height: 45px;
+
+    border: 2px solid #111;
+    border-radius: 5px;
+
+    background: transparent;
+
+    font-size: 25px;
+
+    cursor: pointer;
+}
+
+.input-box button:hover {
+    background-color: #111;
+    color: white;
+}
+
+ul {
+    list-style: none;
+}
+
+.task {
+    display: flex;
+    align-items: center;
+
+    gap: 28px;
+
+    min-height: 70px;
+
+    border-bottom: 1px solid #555;
+}
+
+.task input[type="checkbox"] {
+    appearance: none;
+
+    width: 38px;
+    height: 38px;
+
+    border: 3px solid #111;
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
+.task input[type="checkbox"]:checked {
+    background-color: #111;
+}
+
+.task-text {
+    flex: 1;
+
+    font-size: 18px;
+}
+
+.task.completed .task-text {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.delete-button {
+    border: none;
+
+    background: transparent;
+
+    font-size: 20px;
+
+    cursor: pointer;
+}
